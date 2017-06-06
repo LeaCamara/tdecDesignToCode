@@ -1,8 +1,4 @@
-Lea Camara's Code Test for the Web Admin position at TDEC, June 2017
-
-Instructions: 
-- Use "page-example.jpg" as a mock-up example to create a single working web page using hand-coded HTML and CSS.
-- Responsive code based on viewport width is not required but encouraged. 
+- Used "page-example.jpg" as a mock-up example to create a single working web page using hand-coded HTML and CSS, including responsive code based on viewport width. 
 
 Ideas for Next Iteration:
 - Use flexbox for all the containers.
