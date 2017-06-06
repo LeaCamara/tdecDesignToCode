@@ -1,4 +1,6 @@
-- Used "page-example.jpg" as a mock-up example to create a single working web page using hand-coded HTML and CSS, including responsive code based on viewport width. 
+Used a jpeg webpage design as a mock-up example to create a single working web page using: 
+- hand-coded HTML and CSS, and 
+- responsive code based on viewport width. 
 
 Ideas for Next Iteration:
 - Use flexbox for all the containers.
