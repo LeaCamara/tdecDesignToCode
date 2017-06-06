@@ -1,0 +1,347 @@
+/*** GLOBAL STYLES ***/
+
+/*For the purposes of this coding test, these primary styles are for DESKTOP screen sizes. 
+Following are media queries for mobile and tablet screen sizes.*/
+
+html {
+    font-size: 16px;
+}
+
+body {
+	margin: 0 auto;
+	background: #f5f9fa;
+	color: #646567;
+	font-family: 'Open Sans', Arial, sans-serif;
+	line-height: 1.2em;
+}
+
+img {
+	width: 100%;
+	height: auto;
+}
+
+/*** HEADER ***/
+
+header {
+	margin: auto;
+	color: #fff;
+	background: #334f77;
+	border-bottom: 10px solid #ed3125;
+	padding-top: 2%;
+}
+
+#header-logo {
+	width: 80%;
+	margin: auto;
+}
+
+#menu {
+	width: 80%;
+	margin: auto;
+}
+
+#header-logo img {
+	height: 72px;
+	width: 205px;
+}
+
+/*** HORIZONTAL NAVBAR ***/
+
+header nav ul {
+	padding: 0;
+	margin: 2.5% 0 0 0;	
+}
+
+header nav ul li {
+	display: inline-block;
+	padding: 1% 2% 1% 2%;
+}
+
+header nav ul li:first-child {
+	padding-left: .5%;
+}
+
+header nav ul li a {
+	color: #fff;
+	text-transform: uppercase;
+	text-decoration: none;
+	font-size: .85rem;
+	font-weight: 400;
+}
+
+header nav li:hover {
+	background-color: #ed3125;
+}
+
+/*** MAIN CONTENT AREA ***/
+main {
+	width: 100%;
+	margin: auto;
+}
+
+/*** VERTICAL SIDEBAR ***/
+
+#sidebar-hero-wrapper {
+	width: 80%;
+	margin: auto;
+	height: 100px;
+}
+
+.sidebar {
+	width: 15%;
+	text-align: left;
+	float: left;
+	padding-top: 6%;
+	padding-right: 2%;
+}
+
+.prev-next {
+	font-size: 1.08rem;
+	line-height: 1.2em;
+	padding: 0;
+	margin: 0;
+}
+
+.additional-articles h4, .tags h4, .read-more {
+	text-transform: uppercase;
+}
+
+.additional-articles h4 {
+	padding-top: 0;
+	font-size: 1.3rem;
+	font-weight: 400;
+	margin-top: 10%;
+	margin-bottom: 0;
+	line-height: 1.2em;
+}
+
+.another-article {
+	border-bottom: 1px solid #ccc;
+}
+
+.another-article:last-child {
+	border-bottom: none;
+}
+
+.date {
+	font-style: italic;
+	font-size: .8rem;
+	padding: 0;
+	margin: 8% 0 8% 0;
+}
+
+.article-title {
+	font-weight: 900;
+	padding: 0;
+	margin: 8% 0 8% 0;
+}
+
+.read-more {
+	color: #334f77;
+	font-weight: 900;	
+	padding: 0;
+	margin: 8% 0 8% 0;
+}
+
+.tags h4 {
+	font-size: 1.3rem;
+	font-weight: 400;
+	line-height: 1.2em;
+	margin-bottom: 0;
+}
+
+.tags p {
+	color: #2266a1;
+	margin: 0;
+	margin-top: 5%;
+}
+
+/*** HERO AREA ***/
+
+.hero-area {
+	width: 82%;
+	float: left;
+	padding-bottom: 20%; 
+}
+
+.hero-img {
+	width: 100%;
+	margin: 3% 0 0 0;
+}
+
+.hero-img img {
+	max-width: 1200px;
+	/* Beveled Border */
+	outline: 1px solid #ddd;
+    border-top: 1px solid #fff;
+    padding: .5%;
+    background: #fff;
+    box-shadow: 0px 5px 2px #ddd;
+}
+
+h1 {
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: 700;
+	font-size: 4rem;
+	color: #333;
+	line-height: 1em;
+}
+
+.story-description {
+	font-family: 'Titillium Web', sans-serif;
+	font-style: italic;
+	font-size: 1.6rem;
+	line-height: 1.2em;
+}
+
+article .share-box {
+	width: 70%;
+	background: #eee;
+	border: 1px solid #cccecd;
+	padding-left: 3%;
+	font-size: .85rem;
+}
+
+/*** FOOTER ***/
+
+footer {
+	width: 100%;
+	color: #fff;
+	background: #494949;
+	padding: 2.5% 0 4.5% 0;
+	clear: both;
+}
+
+footer p {
+	width: 80%;
+	margin: auto;	
+	font-size: .85rem;
+	margin-top: 1.25%;
+}
+
+#footer-logo {
+	width: 80%;
+	margin: auto;
+}
+
+#footer-logo img {
+	height: 50px;  
+	width: 140px;
+}
+
+/* ==========================================================================
+   Media Queries for Responsive Design.
+   These examples override the primary DESKTOP styles.
+   ========================================================================== */
+
+@media (min-width: 0px) and (max-width: 767px) {
+    /****   MOBILE STYLES   ****/
+
+    #parent-container {
+    	text-align: center;
+    }
+
+    /*** HEADER ***/
+
+    header nav ul li {
+		display: block;
+		text-align: center;	
+	}
+
+    /*** VERTICAL SIDEBAR ***/
+
+    .sidebar {
+    	display: none;
+    }
+
+    /*** HERO AREA ***/
+    .hero-area {
+    	width: 100%;
+    }
+
+    .hero-img img {
+		width: 100%;
+		height: auto;
+		margin: auto;
+	}
+
+	.share-box {
+		margin: 0 auto;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+    /****   TABLET STYLES   ****/
+
+    /*** HEADER ***/
+   	header {
+   		padding-bottom: 9%;
+   		margin: auto;
+   		width: 100%;
+   	}
+
+   	#logo-menu-wrapper {
+   		width: 80%;
+   		margin: auto;
+   	}
+
+   	#header-logo {
+   		width: 40%;
+   		float: left;
+   		margin: auto;
+   	}
+
+   	#menu {
+   		margin: auto;
+   		float: left;
+   		width: 60%;
+   	}
+
+    /*** HORIZONTAL NAVBAR ***/
+    header nav {
+    	text-align: right;
+    	margin-top: 3%;
+    }
+
+    /*** VERTICAL SIDEBAR ***/
+    .sidebar {
+    	display: none;
+    }
+
+    /*** HERO AREA ***/
+    .hero-area {
+    	width: 100%;
+    	padding-left: 0; 
+    }
+
+    .hero-img {
+		width: 42%;
+    	float: left;
+    	padding-right: 2%;
+    }
+
+    .top-story {
+    	float: left;
+    	width: 56%;
+    }
+
+    .hero-img img {
+		height: auto;
+		margin: auto;
+	}
+
+	h1 {
+		font-size: 3rem;
+	}
+
+    /*** FOOTER ***/
+    footer {
+    	text-align: center;
+    }
+
+    #footer-logo img {
+    	margin: 0 auto;
+    }
+
+}
+
